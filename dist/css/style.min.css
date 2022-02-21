@@ -1197,7 +1197,7 @@ body._touch .menu__link {
 .qna {
   z-index: 3;
   position: relative;
-  background-image: url("/img/qna-bg.png");
+  background-image: url("../img/qna-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
