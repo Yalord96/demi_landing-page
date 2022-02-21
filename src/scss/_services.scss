@@ -1,0 +1,160 @@
+.page {
+  &__section {
+    &_2 {}
+  }
+}
+
+.services {
+  position: relative;
+  color: #000000;
+  z-index: 1;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -70%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 60px;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 38px;
+    transition: 0.3s all;
+    padding: 50px 38px 60px 38px;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+
+  &__card-title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+    max-height: 52px;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    padding: 0;
+  }
+
+
+  .swiper-slide {
+    transition: 0.3s all;
+  }
+
+  div.swiper-button-next,
+  div.swiper-button-prev {
+    top: 50%;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  div.swiper-button-next {
+    right: -54px;
+  }
+
+  div.swiper-button-prev {
+    left: -62px;
+  }
+
+
+  @include _laptop {
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+      display: none;
+    }
+  }
+
+  @include _tablet {
+    padding: 0 !important;
+
+    .container {
+      max-width: none;
+      padding: 0;
+    }
+
+    &__slide {
+      padding: 22px 18px 25px 18px;
+      border-radius: 8px;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+
+    &__card-title {
+      font-size: 20px;
+      line-height: 1.4;
+      max-height: 34px;
+    }
+
+    &__image {
+      max-width: 160px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .swiper {
+      padding: 60px 60px;
+    }
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+      display: none;
+    }
+
+    div.swiper-slide-active {
+      transform: scale(1.2);
+      z-index: 2;
+    }
+  }
+
+  @include _mobile {
+    &__card-title {
+      font-size: 14px;
+      line-height: 1.4;
+      max-height: 31px;
+    }
+  }
+
+  @media screen and (min-width: 1500px) and (max-width: 1700px) {
+
+    div.swiper-button-next,
+    div.swiper-button-prev {
+      display: none;
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

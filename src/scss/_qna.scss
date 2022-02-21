@@ -1,0 +1,118 @@
+.page {
+  &__section {
+    &_3 {
+    }
+  }
+}
+.qna {
+  z-index: 3;
+  position: relative;
+  background-image: url('/img/qna-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  @include _mobile {
+    padding: 0 !important;
+    background-size: cover;
+  }
+  .container {
+    max-width: 1135px;
+    @include _mobile {
+      padding: 0 25px;
+    }
+  }
+  &__title {
+    @extend %section-title;
+    margin-bottom: 60px;
+    color: #000;
+  }
+
+  &__faq-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include _mobile {
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+  }
+
+  &__faq-item {
+    position: relative;
+    padding: 30px 36px 30px 103px;
+    background-color: #f1f1f1;
+    border-radius: 11px;
+    font-size: 30px;
+    color: #333333;
+    @include _tablet {
+      font-size: 24px;
+      padding-left: 93px;
+    }
+    @include _mobile {
+      font-size: 12px;
+      padding: 14px 31px;
+    }
+    line-height: 1.4;
+    transition: 0.3s all;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 37px;
+      top: 49px;
+      width: 43px;
+      height: 4px;
+      @include _tablet {
+        width: 36px;
+        top: 46px;
+      }
+      @include _mobile {
+        width: 14px;
+        height: 2px;
+        top: 21px;
+        left: 10px;
+      }
+      border-radius: 5px;
+      background-color: #ff19ee;
+      transition: inherit;
+    }
+    &::before {
+      transform: rotate(90deg);
+    }
+    p {
+      pointer-events: none;
+    }
+
+    &.active {
+      background-color: #1f005b;
+      color: #f1f1f1f1;
+      .qna__faq-answer {
+        font-size: inherit;
+        line-height: inherit;
+        margin-top: 20px;
+      }
+      &::before {
+        background-color: #00ffff;
+        transform: rotate(0);
+      }
+      &::after {
+        transform: rotate(-90deg);
+        opacity: 0;
+      }
+    }
+  }
+
+  &__faq-question {
+    font-weight: 500;
+    color: inherit;
+  }
+
+  &__faq-answer {
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    font-weight: 300; // Ну шо, додик, как оно ???
+    color: #ffffff;
+    transition: inherit;
+  }
+}

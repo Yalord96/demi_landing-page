@@ -1,0 +1,295 @@
+.portfolio {
+  position: relative;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/portfolio-bg.png');
+  background-size: 100% 100%;
+  padding-top: 283px;
+  min-height: 2563px;
+  z-index: 2;
+
+  &__notice {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1.4;
+    text-align: center;
+    color: inherit;
+    margin-bottom: 150px;
+    max-width: 998px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    @extend %section-title;
+    margin-bottom: 50px;
+  }
+
+  .marquee {
+    top: 510px;
+
+    span {
+      color: rgba(255, 255, 255, 0.08);
+    }
+
+    &_bottom {
+      top: auto;
+      bottom: 900px;
+    }
+  }
+
+  &-swiper {
+    max-width: 1356px;
+    width: 100%;
+
+    &__navigation {
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 224px;
+      margin-bottom: 150px;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    &__btn-prev {
+    }
+
+    &__btn-next {
+    }
+  }
+
+  &-instagram-swiper {
+    max-width: 1733px;
+  }
+
+  &__decoration {
+    position: absolute;
+    width: 222px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 22%;
+    z-index: -1;
+  }
+
+  &__decoration-vertical {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    transition: 0.3s all;
+  }
+
+  @include _laptop {
+    background-size: cover;
+    min-height: 2100px;
+    padding-top: 180px;
+
+    &__notice {
+      margin-bottom: 80px;
+    }
+  }
+
+  @include _tablet {
+    &__notice {
+      margin-bottom: 80px;
+      max-width: 400px;
+    }
+  }
+
+  @include _tablet {
+    padding-top: 120px;
+    min-height: 1200px;
+
+    &__notice {
+      margin-bottom: 30px;
+      font-size: 9px;
+      line-height: 14px;
+    }
+
+    &__decoration-vertical {
+      display: none;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    div.swiper-slide-active {
+      transform: scale(1.2);
+      z-index: 2;
+    }
+
+    .swiper {
+      padding: 30px 0;
+      margin-bottom: 20px;
+    }
+
+    &-swiper__navigation {
+      display: none;
+    }
+
+    .marquee {
+      top: 160px;
+      font-size: 55px;
+
+      span {
+        color: rgba(255, 255, 255, 0.08);
+      }
+
+      &_bottom {
+        top: auto;
+        bottom: 460px;
+      }
+    }
+
+    &__decoration {
+      width: 100px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    min-height: 1300px;
+  }
+}
+
+.portfolio-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  &__img {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include _laptop {
+    width: 100%;
+    &__img {
+      max-width: 320px;
+      width: 100%;
+    }
+
+    &__link {
+      max-width: 140px;
+    }
+  }
+
+  @include _tablet {
+    align-items: flex-start;
+
+    &__img {
+      max-width: 180px;
+      margin-bottom: 18px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
+}
+
+.portfolio-instagram {
+  &__title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+  }
+
+  &__notice {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+    a {
+      font-style: normal;
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  @include _laptop {
+    &__title-logo {
+      max-width: 180px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include _tablet {
+    &__title-logo {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    &__img {
+      max-width: 200px;
+    }
+
+    &__notice {
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}

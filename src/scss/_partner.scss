@@ -1,0 +1,65 @@
+.partner {
+  position: relative;
+  top: -155px;
+  z-index: 6;
+  padding-top: 100px;
+  background-image: url('../img/partners-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include _laptop {
+    top: -224px;
+    margin-bottom: -204px;
+
+  }
+  @include _tablet {
+    top: -180px;
+    margin-bottom: -180px;
+
+  }
+  @include _mobile {
+    margin-bottom: -180px;
+  }
+  .container {
+  }
+
+  &__title {
+    color: #333;
+    @extend %section-title;
+    margin-bottom: 100px;
+    @include _mobile {
+      margin-bottom: 40px;
+    }
+    @include _tablet {
+      margin-top: 50px;
+    }
+    @include _laptop {
+      margin-top: 60px;
+    }
+  }
+
+  &__swiper {
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+  @include _tablet {
+    padding: 30px 20px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100% !important;
+}

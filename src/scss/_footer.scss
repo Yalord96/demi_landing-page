@@ -1,0 +1,222 @@
+.footer {
+  background-image: url('../img/footer-bg.png');
+  min-height: 1300px;
+  position: relative;
+  top: -288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  overflow: hidden;
+  @include _mobile {
+    min-height: 610px;
+    top: -273px;
+  }
+  a {
+    color: inherit;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 82px 20px;
+    gap: 50px;
+    width: 100%;
+    max-height: 240px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0px 4px 109px rgba(255, 255, 255, 0.54);
+    backdrop-filter: blur(22px);
+    margin-bottom: 346px;
+    @include _tablet {
+      max-height: 180px;
+    }
+    @include _mobile {
+      gap: 20px;
+      max-height: 65px;
+      padding: 22px 20px;
+      margin-bottom: 80px;
+    }
+  }
+  &__contact-text {
+    font-size: 32px;
+    font-weight: 500;
+    @include _tablet {
+      font-size: 24px;
+    }
+    @include _mobile {
+      font-size: 10px;
+    }
+  }
+  &__contact-button {
+    padding: 22px 81px;
+    background-color: #fff;
+    color: #000 !important;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.4;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+      background-color: $primary-accent-color;
+      color: #fff !important;
+    }
+    @include _tablet {
+      padding: 18px 71px;
+    }
+    @include _mobile {
+      font-size: 11px;
+      padding: 8px 22px;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 113px;
+    border-top: 1px solid;
+    border-color: #fff;
+    border-bottom: 1px solid;
+    max-width: 833px;
+    padding: 18px 0;
+    @include _mobile {
+      font-size: 10px;
+      gap: 20px;
+      padding: 5px 5px;
+      max-width: 400px;
+    }
+  }
+  &__logo {
+    img {
+      width: 100%;
+    }
+    @include _mobile {
+      max-width: 49px;
+    }
+  }
+  &__instagram {
+    display: flex;
+    align-items: center;
+    
+  }
+  &__facebook {
+    display: flex;
+    align-items: center;
+  }
+  &__facebook-logo {
+    width: 37px;
+    height: 37px;
+    margin-right: 14px;
+    @include _mobile {
+      width: 14px;
+      height: 14px;
+      margin-right: 6px;
+    }
+  }
+  &__instagram-logo {
+    width: 37px;
+    height: 37px;
+    margin-right: 14px;
+    @include _mobile {
+      width: 14px;
+      height: 14px;
+      margin-right: 6px;
+    }
+  }
+  &__follow-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include _mobile {
+      gap: 5px;
+    }
+  }
+
+  &__follow-us-title {
+  }
+
+  &__follow-us-instagram {
+    font-size: 16px;
+    @include _mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__follow-us-facebook {
+    font-size: 16px;
+    @include _mobile {
+      font-size: 10px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 1.4;
+    @include _mobile {
+      gap: 5px;
+    }
+    &_address {
+    }
+
+    &_number {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__copy-right {
+    margin: 20px 0 100px 0;
+    text-align: center;
+    @include _mobile {
+      margin: 20px 0;
+      font-size: 9px;
+    }
+  }
+  &__parallax-planet-bottom {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    width: 288px;
+    height: 320px;
+    transition: all 0.1s ease;
+    @include _tablet {
+      top: 75%;
+    }
+    @include _mobile {
+      width: 80px;
+      height: 75px;
+      top: 65%;
+    }
+  }
+  &__parallax-planet-left {
+   position: absolute;
+   transition: all 0.1s ease;
+   top: 27%;
+   left: 10%;
+   @include _tablet {
+     left: 30%;
+   }
+   @include _mobile {
+     width: 60px;
+     height: 48px;
+     top: 50%;
+   }
+  }
+  &__parallax-girl {
+    position: absolute;
+    left: -5%;
+    top: 25.5%;
+    transition: all 0.6s ease;
+    height: 744px;
+    width: 562px;
+    overflow: hidden;
+    @include _mobile {
+      display: none;
+    }
+  }
+}

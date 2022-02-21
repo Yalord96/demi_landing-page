@@ -1,0 +1,11 @@
+%section-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1.5;
+  text-align: center;
+
+  @include _mobile {
+    font-size: 19px;
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,33 @@
+.marquee {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @include _mobile {
+    top: -8px;
+  }
+
+}
+
+.marquee span {
+  display: inline-block;
+  animation: scroll 5s infinite linear;
+  font-weight: bold;
+  font-size: 101px;
+  line-height: 0.83;
+  letter-spacing: 0.025em;
+  color: rgba(31, 0, 91, 0.08);
+
+  @include _tablet {
+    font-size: 55px;
+    top: -5px;
+  }
+
+  @include _mobile {
+    font-size: 55px;
+  }
+}
