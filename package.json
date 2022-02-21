@@ -8,12 +8,12 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
+    "deploy": "gh-pages -d dist",
     "svgSprite": "gulp svgSpriteFunc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/.git"
+    "url": "git+https://github.com/Yalord96/demi-test"
   },
   "author": "",
   "license": "ISC",
