@@ -1,26 +1,30 @@
 .page {
   &__section {
-    &_2 {}
+    &_2 {
+    }
   }
 }
 
 .services {
   position: relative;
   color: #000000;
-  z-index: 1;
+  z-index: 10;
 
-  &__bg {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    bottom: -70%;
-    width: 100%;
-    object-fit: cover;
-  }
+  // &__bg {
+  //   position: absolute;
+  //   z-index: -1;
+  //   left: 0;
+  //   bottom: -70%;
+  //   width: 100%;
+  //   object-fit: cover;
+  // }
 
   &__title {
     @extend %section-title;
     margin-bottom: 60px;
+    @include _mobile {
+      margin-bottom: 0;
+    }
   }
 
   &__slide {
@@ -59,7 +63,6 @@
     padding: 0;
   }
 
-
   .swiper-slide {
     transition: 0.3s all;
   }
@@ -81,9 +84,7 @@
     left: -62px;
   }
 
-
   @include _laptop {
-
     div.swiper-button-next,
     div.swiper-button-prev {
       display: none;
@@ -118,7 +119,7 @@
     }
 
     .swiper {
-      padding: 60px 60px;
+      padding: 0 60px;
     }
 
     div.swiper-button-next,
@@ -141,10 +142,14 @@
   }
 
   @media screen and (min-width: 1500px) and (max-width: 1700px) {
-
     div.swiper-button-next,
     div.swiper-button-prev {
       display: none;
+    }
+  }
+  @include _mobile {
+    .swiper-wrapper {
+      left: -10px;
     }
   }
 }

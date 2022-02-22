@@ -23,6 +23,10 @@
   &__logo img {
     width: 140px;
     height: 38px;
+    @include _mobile {
+      width: 100%;
+      height: 25px;
+    }
   }
   &__menu {
   }

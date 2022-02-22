@@ -57,11 +57,11 @@ const portfolioSwiper = new Swiper('.portfolio-swiper', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.6,
+      slidesPerView: 1.5,
       centeredSlides: true
     },
     375: {
-      slidesPerView: 2.2,
+      slidesPerView: 1.5,
       centeredSlides: true
     },
     560: {
@@ -122,9 +122,15 @@ const partnerSwiper = new Swiper('.partner__swiper', {
   spaceBetween: 78,
   autoHeight: true,
   centeredSlidesBounds: true,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.partners-button-next',
+    prevEl: '.partners-button-prev'
+  },
   breakpoints: {
     320: {
-      slidesPerView: 2
+      slidesPerView: 2,
+      spaceBetween: 30
     },
     768: {
       slidesPerView: 2,
@@ -192,31 +198,31 @@ if (iconMenu) {
 
 // Прокрутка при клике
 
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-if (menuLinks.length > 0) {
-  menuLinks.forEach(menuLink => {
-    menuLink.addEventListener('click', onMenuLinkClick);
-  });
+// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+// if (menuLinks.length > 0) {
+//   menuLinks.forEach(menuLink => {
+//     menuLink.addEventListener('click', onMenuLinkClick);
+//   });
 
-  function onMenuLinkClick(e) {
-    const menuLink = e.target;
-    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-      const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
-      if (iconMenu.classList.contains('_active')) {
-        document.body.classList.remove('_lock');
-        iconMenu.classList.remove('_active');
-        menuBody.classList.remove('_active');
-      }
-      window.scrollTo({
-        top: gotoBlockValue,
-        behavior: 'smooth'
-      });
-      e.preventDefault();
-    }
-  }
-}
+//   function onMenuLinkClick(e) {
+//     const menuLink = e.target;
+//     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+//       const gotoBlock = document.querySelector(menuLink.dataset.goto);
+//       const gotoBlockValue =
+//         gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+//       if (iconMenu.classList.contains('_active')) {
+//         document.body.classList.remove('_lock');
+//         iconMenu.classList.remove('_active');
+//         menuBody.classList.remove('_active');
+//       }
+//       window.scrollTo({
+//         top: gotoBlockValue,
+//         behavior: 'smooth'
+//       });
+//       e.preventDefault();
+//     }
+//   }
+// }
 // ========================= paralax =======================
 // let bg = document.querySelector('.mouse-parallax-bg');
 let planetBottom = document.querySelector('.banner__parallax-planet-bottom');
@@ -243,4 +249,22 @@ faqUl.addEventListener('click', function (e) {
     return;
   }
   e.target.classList.toggle('active');
+});
+
+//
+var btn = document.querySelector('.to-top');
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 300) {
+    btn.classList.add('show');
+  } else {
+    btn.classList.remove('show');
+  }
+});
+
+btn.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });

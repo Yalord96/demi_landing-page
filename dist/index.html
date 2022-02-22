@@ -19,20 +19,20 @@
       </div>
       <nav class="menu__body">
         <ul class="menu__list">
-          <li><a data-goto=".page__section_1" href="#" class="menu__link">Сервіси</a></li>
-          <li><a data-goto=".page__section_2" href="#" class="menu__link">Проекти</a></li>
-          <li><a data-goto=".page__section_3" href="#" class="menu__link">Партнери</a></li>
-          <li><a data-goto=".page__section_3" href="#" class="menu__link">QnA</a></li>
-          <li><a data-goto=".page__section_3" href="#" class="menu__link">Контакти</a></li> 
+          <li><a data-goto=".page__section_1" href="#services" class="menu__link">Сервіси</a></li>
+          <li><a data-goto=".page__section_2" href="#projects" class="menu__link">Проекти</a></li>
+          <li><a data-goto=".page__section_3" href="#partners" class="menu__link">Партнери</a></li>
+          <li><a data-goto=".page__section_4" href="#qna" class="menu__link">QnA</a></li>
+          <li><a data-goto=".page__section_5" href="#contacts" class="menu__link">Контакти</a></li>
         </ul>
         <ul class="menu__list">
           <li>
-            <a data-goto=".page__section_3" href="#" class="menu__link">
+            <a data-goto=".page__section_3" href="https://www.instagram.com/demistudio.ua/" class="menu__link">
               <svg><use href="img/icons/icons.svg#instagram"></use></svg>
             </a>
           </li>
           <li>
-            <a data-goto=".page__section_3" href="#" class="menu__link">
+            <a data-goto=".page__section_3" href="https://www.facebook.com/demistudio.ua/" class="menu__link">
               <svg><use href="img/icons/icons.svg#facebook"></use></svg>
             </a>
           </li>
@@ -43,7 +43,7 @@
 </header>
 
       <main class="page">
-        <section class="page__section page__section_1 banner">
+        <section class="page__section banner">
           <div class="container">
             <div class="banner__content">
               <h1 class="banner__title">
@@ -57,7 +57,7 @@
                 <li class="banner__list-item">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
                 <li class="banner__list-item">Розробимо та впровадимо інтерактив для вашого бренду</li>
               </ul>
-              <a class="banner__button">Дізнатись більше</a>
+              <a href="#services" class="banner__button">Дізнатись більше</a>
             </div>
           </div>
           <svg
@@ -795,8 +795,7 @@
             </defs>
           </svg>
         </section>
-        <section class="page__section page__section_2 services">
-          <img src="./img/services-bg.svg" alt=" bg" class="services__bg" />
+        <section class="page__section page__section_2 services" id="services">
           <div class="marquee">
             <span>&nbsp;СЕРВІСИ |</span>
             <span>&nbsp;СЕРВІСИ |</span>
@@ -807,7 +806,7 @@
             <span>&nbsp;СЕРВІСИ |</span>
             <span>&nbsp;СЕРВІСИ |</span>
           </div>
-          <h2 class="services__title">СЕРВІСИ</h2>
+          <h2 class="services__title page__section_1">СЕРВІСИ</h2>
           <div class="container">
             <div class="swiper services-swiper">
               <div class="swiper-wrapper">
@@ -879,7 +878,7 @@
             </div>
           </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio page__section_2">
   <div class="marquee">
     <span>&nbsp;ПРОЕКТИ |</span>
     <span>&nbsp;ПРОЕКТИ |</span>
@@ -901,64 +900,72 @@
     <span>&nbsp;INSTAGRAM |</span>
   </div>
   <div class="container container_lg">
-    <h3 class="portfolio__notice">
+    <h3 class="portfolio__notice" id="projects">
       Масштабуйте і оновлюйте свої рішення у міру зміни ваших потреб - ми завжди поруч, щоб зробити ваш бізнес ще краще.
     </h3>
     <h2 class="portfolio__title">ПРОЕКТИ</h2>
     <div class="portfolio-swiper swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><div class="portfolio-card">
+        <div class="swiper-slide">
+          <div class="portfolio-card">
   <img src="./img/portfolio-img-1.jpg" alt="img" class="portfolio-card__img" />
   <h3 class="portfolio-card__title">NOOPLANETARIUM AR</h3>
   <div class="portfolio-card__links">
-    <a href="" class="portfolio-card__link">
+    <a href="https://play.google.com/store/apps/details?id=com.Demi.NooPlanetarium&hl=ru" class="portfolio-card__link">
       <img src="./img/googleplay.svg" alt="googleplay link" />
     </a>
-    <a href="" class="portfolio-card__link">
+    <a href="https://apps.apple.com/ua/app/nooplanet-ar/id1547172115" class="portfolio-card__link">
       <img src="./img/appstore.svg" alt="appstore link" />
     </a>
   </div>
 </div>
-</div>
-        <div class="swiper-slide"><div class="portfolio-card">
+
+        </div>
+        <div class="swiper-slide">
+          <div class="portfolio-card">
   <img src="./img/portfolio-img-2.jpg" alt="img" class="portfolio-card__img" />
   <h3 class="portfolio-card__title">MYMID</h3>
   <div class="portfolio-card__links">
-    <a href="" class="portfolio-card__link">
+    <a href="https://play.google.com/store/apps/details?id=com.Demi.MyMID&hl=ru" class="portfolio-card__link">
       <img src="./img/googleplay.svg" alt="googleplay link" />
     </a>
-    <a href="" class="portfolio-card__link">
+    <a href="https://apps.apple.com/ua/app/my-mid/id1528349863" class="portfolio-card__link">
       <img src="./img/appstore.svg" alt="appstore link" />
     </a>
   </div>
 </div>
-</div>
-        <div class="swiper-slide"><div class="portfolio-card">
+
+        </div>
+        <div class="swiper-slide">
+          <div class="portfolio-card">
   <img src="./img/portfolio-img-3.jpg" alt="img" class="portfolio-card__img" />
   <h3 class="portfolio-card__title">GAGARINPARK</h3>
   <div class="portfolio-card__links">
-    <a href="" class="portfolio-card__link">
+    <a href="https://play.google.com/store/apps/details?id=com.Demi.GagarinPark&hl=ru" class="portfolio-card__link">
       <img src="./img/googleplay.svg" alt="googleplay link" />
     </a>
-    <a href="" class="portfolio-card__link">
+    <a href="https://apps.apple.com/ua/app/gagarin-park/id1480425414" class="portfolio-card__link">
       <img src="./img/appstore.svg" alt="appstore link" />
     </a>
   </div>
 </div>
-</div>
-        <div class="swiper-slide"><div class="portfolio-card">
+
+        </div>
+        <div class="swiper-slide">
+          <div class="portfolio-card">
   <img src="./img/portfolio-img-4.jpg" alt="img" class="portfolio-card__img" />
   <h3 class="portfolio-card__title">BOOKSPACE</h3>
   <div class="portfolio-card__links">
-    <a href="" class="portfolio-card__link">
+    <a href="https://play.google.com/store/apps/details?id=com.Demi.bookspace" class="portfolio-card__link">
       <img src="./img/googleplay.svg" alt="googleplay link" />
     </a>
-    <a href="" class="portfolio-card__link">
+    <a href="https://apps.apple.com/ua/app/book-space/id1582313075" class="portfolio-card__link">
       <img src="./img/appstore.svg" alt="appstore link" />
     </a>
   </div>
 </div>
-</div>
+
+        </div>
       </div>
     </div>
     <div class="portfolio-swiper__navigation">
@@ -1020,7 +1027,7 @@
 </section>
 
         <!--  -->
-        <section class="partner">
+        <section class="partner page__section_3" id="partners">
   <div class="container">
     <h2 class="partner__title">НАШІ ПАРТНЕРИ</h2>
     <div class="swiper partner__swiper">
@@ -1042,10 +1049,32 @@
         </div>
       </div>
     </div>
+    <div class="partners-button-prev">
+      <svg width="29" height="53" viewBox="0 0 29 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M27.4975 51.3331L2 26.6666L27.4975 2"
+          stroke="#1F005B"
+          stroke-width="2.31474"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="partners-button-next">
+      <svg width="29" height="53" viewBox="0 0 29 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M2.00058 51.3331L27.498 26.6666L2.00059 2"
+          stroke="#1F005B"
+          stroke-width="2.31474"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
   </div>
 </section>
 
-        <section class="page__section page__section_3 qna">
+        <section class="page__section page__section_4 qna" id="qna">
           <div class="marquee">
             <span>&nbsp;QnA |</span>
             <span>&nbsp;QnA |</span>
@@ -1091,23 +1120,23 @@
         </section>
       </main>
     </div>
-    <footer class="footer">
+    <footer class="footer page__section_5" id="contacts">
   <div class="footer__contact">
     <p class="footer__contact-text">
       Залиште заявку на<br />
       бескоштовну консультацію
     </p>
-    <a href="mailto:" class="footer__contact-button">Contact us</a>
+    <a href="mailto:demi.cooperation@gmail.com" class="footer__contact-button">Contact us</a>
   </div>
   <div class="container">
     <a class="footer__logo"><img src="img/logo.png" alt="logo" /></a>
     <div class="footer__follow-us">
       <h4 class="footer__follow-us-title">Follow us:</h4>
-      <a href="" class="footer__instagram">
+      <a href="https://www.instagram.com/demistudio.ua/" class="footer__instagram">
         <svg class="footer__instagram-logo"><use href="img/icons/icons.svg#footer-instagram"></use></svg>
         <p class="footer__follow-us-instagram">@demistudio.ua</p>
       </a>
-      <a href="" class="footer__facebook">
+      <a href="https://www.facebook.com/demistudio.ua/" class="footer__facebook">
         <svg class="footer__facebook-logo"><use href="img/icons/icons.svg#footer-facebook"></use></svg>
         <p class="footer__follow-us-facebook">@demistudio.ua</p>
       </a>
@@ -1119,7 +1148,7 @@
       </p>
       <p class="footer__contacts_number">
         <a href="tel:+380669796345">+380669796345</a>
-        <a href="mailto:demiurgevr@gmail.com">demiurgevr@gmail.com</a>
+        <a href="mailto:demi.cooperation@gmail.com">demi.cooperation@gmail.com</a>
       </p>
     </div>
   </div>
@@ -1867,6 +1896,9 @@
       </linearGradient>
     </defs>
   </svg>
+  <button type="button" class="to-top">
+    <img src="./img/arrow.png" alt="arrow-to-top" />
+  </button>
 </footer>
 
     <script src="js/app.min.js"></script>

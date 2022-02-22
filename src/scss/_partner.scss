@@ -1,40 +1,59 @@
 .partner {
   position: relative;
-  top: -155px;
+  top: -200px;
   z-index: 6;
   padding-top: 100px;
   background-image: url('../img/partners-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  div.partners-button-next {
+    right: 40px;
+    top: auto;
+    bottom: 10px;
+    position: absolute;
+    cursor: pointer;
+  }
+  div.partners-button-prev {
+    left: 40px;
+    top: auto;
+    bottom: 10px;
+    position: absolute;
+    cursor: pointer;
+  }
   @include _laptop {
     top: -224px;
     margin-bottom: -204px;
-
   }
   @include _tablet {
-    top: -180px;
+    top: -165px;
     margin-bottom: -180px;
-
+    div.swiper-button-next,
+    div.swiper-button-prev {
+      display: none !important;
+    }
   }
   @include _mobile {
-    margin-bottom: -180px;
+    margin-bottom: -150px;
+    div.partners-button-prev,
+    div.partners-button-next {
+      display: none;
+    }
   }
-  .container {
-  }
-
   &__title {
     color: #333;
     @extend %section-title;
+    margin-top: 30px;
     margin-bottom: 100px;
-    @include _mobile {
-      margin-bottom: 40px;
-    }
     @include _tablet {
       margin-top: 50px;
     }
     @include _laptop {
       margin-top: 60px;
+    }
+    @include _mobile {
+      margin-bottom: 20px;
     }
   }
 
@@ -45,12 +64,13 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: grayscale(100%);
+    transition: 0.3s all;
+    &:hover {
+      filter: grayscale(0);
+    }
   }
 }
-
-.swiper {
-}
-
 .swiper-wrapper {
   @include _tablet {
     padding: 30px 20px;

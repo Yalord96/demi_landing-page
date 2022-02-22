@@ -9,14 +9,10 @@
   padding: 200px 0 230px 0;
   overflow: hidden;
 
-  @include _laptop {
-    background-size: cover;
-  }
-
   @include _tablet {
-    //background-image: url('../img/banner-bg-mobile.png');
     min-height: 1550px;
     padding-top: 100px;
+    background-size: cover;
   }
 
   @include _mobile {
@@ -123,7 +119,7 @@
 
   &__parallax-planet-bottom {
     position: absolute;
-    bottom: -60px;
+    bottom: -10px;
     left: 40%;
     width: 335px;
     height: 300px;
@@ -177,7 +173,7 @@
       left: 40%;
       height: 360px;
       width: 70%;
-      top: 53%;
+      top: 55%;
     }
   }
 }

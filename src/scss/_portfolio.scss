@@ -1,12 +1,14 @@
 .portfolio {
   position: relative;
+  top: -380px;
   color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url('../img/portfolio-bg.png');
   background-size: 100% 100%;
-  padding-top: 283px;
-  min-height: 2563px;
+  padding-top: 566px;
+  margin-bottom: -380px;
+  min-height: 2755px;
   z-index: 2;
 
   &__notice {
@@ -28,7 +30,7 @@
   }
 
   .marquee {
-    top: 510px;
+    top: 790px;
 
     span {
       color: rgba(255, 255, 255, 0.08);
@@ -36,7 +38,7 @@
 
     &_bottom {
       top: auto;
-      bottom: 900px;
+      bottom: 815px;
     }
   }
 
@@ -96,29 +98,37 @@
 
   @include _laptop {
     background-size: cover;
-    min-height: 2100px;
-    padding-top: 180px;
-
+    min-height: 2400px;
+    padding-top: 500px;
+    .marquee {
+      top: 700px;
+      &_bottom {
+        top: auto;
+        bottom: 700px;
+      }
+    }
     &__notice {
       margin-bottom: 80px;
     }
   }
 
-  @include _tablet {
-    &__notice {
-      margin-bottom: 80px;
-      max-width: 400px;
-    }
-  }
+  // @include _tablet {
+  //   &__notice {
+  //     margin-bottom: 80px;
+  //     max-width: 400px;
+  //   }
+  // }
 
   @include _tablet {
-    padding-top: 120px;
-    min-height: 1200px;
-
+    padding-top: 280px;
+    min-height: 1355px;
+    top: -245px;
+    margin-bottom: -240px;
     &__notice {
       margin-bottom: 30px;
       font-size: 9px;
       line-height: 14px;
+      max-width: 400px;
     }
 
     &__decoration-vertical {
@@ -161,8 +171,31 @@
       width: 100px;
     }
   }
+
   @media (min-width: 768px) and (max-width: 991px) {
-    min-height: 1300px;
+    min-height: 1400px;
+    padding-top: 290px;
+
+    .marquee {
+      top: 360px;
+      &_bottom {
+        top: auto;
+        bottom: 493px;
+      }
+    }
+
+    &__notice {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+  @include _mobile {
+    .swiper-wrapper {
+      left: -10px;
+    }
   }
 }
 
@@ -290,6 +323,11 @@
       font-size: 13px;
       line-height: 18px;
       margin-bottom: 20px;
+    }
+  }
+  @include _mobile {
+    .swiper-wrapper {
+      left: -10px;
     }
   }
 }

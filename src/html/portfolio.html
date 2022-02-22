@@ -1,4 +1,4 @@
-<section class="portfolio">
+<section class="portfolio page__section_2">
   <div class="marquee">
     <span>&nbsp;ПРОЕКТИ |</span>
     <span>&nbsp;ПРОЕКТИ |</span>
@@ -20,16 +20,31 @@
     <span>&nbsp;INSTAGRAM |</span>
   </div>
   <div class="container container_lg">
-    <h3 class="portfolio__notice">
+    <h3 class="portfolio__notice" id="projects">
       Масштабуйте і оновлюйте свої рішення у міру зміни ваших потреб - ми завжди поруч, щоб зробити ваш бізнес ще краще.
     </h3>
     <h2 class="portfolio__title">ПРОЕКТИ</h2>
     <div class="portfolio-swiper swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">@@include('./portfolio-card.html',{"img":"1", "title":"NOOPLANETARIUM AR"})</div>
-        <div class="swiper-slide">@@include('./portfolio-card.html',{"img":"2", "title":"MYMID"})</div>
-        <div class="swiper-slide">@@include('./portfolio-card.html',{"img":"3", "title":"GAGARINPARK"})</div>
-        <div class="swiper-slide">@@include('./portfolio-card.html',{"img":"4", "title":"BOOKSPACE"})</div>
+        <div class="swiper-slide">
+          @@include('./portfolio-card.html',{"img":"1", "title":"NOOPLANETARIUM AR",
+          "link-an":"https://play.google.com/store/apps/details?id=com.Demi.NooPlanetarium&hl=ru",
+          "link-ios":"https://apps.apple.com/ua/app/nooplanet-ar/id1547172115"})
+        </div>
+        <div class="swiper-slide">
+          @@include('./portfolio-card.html',{"img":"2", "title":"MYMID",
+          "link-an":"https://play.google.com/store/apps/details?id=com.Demi.MyMID&hl=ru",
+          "link-ios":"https://apps.apple.com/ua/app/my-mid/id1528349863"})
+        </div>
+        <div class="swiper-slide">
+          @@include('./portfolio-card.html',{"img":"3", "title":"GAGARINPARK",
+          "link-an":"https://play.google.com/store/apps/details?id=com.Demi.GagarinPark&hl=ru","link-ios":"https://apps.apple.com/ua/app/gagarin-park/id1480425414"})
+        </div>
+        <div class="swiper-slide">
+          @@include('./portfolio-card.html',{"img":"4", "title":"BOOKSPACE", "link-an":
+          "https://play.google.com/store/apps/details?id=com.Demi.bookspace",
+          "link-ios":"https://apps.apple.com/ua/app/book-space/id1582313075"})
+        </div>
       </div>
     </div>
     <div class="portfolio-swiper__navigation">

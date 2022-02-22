@@ -10,7 +10,6 @@
   @include _mobile {
     top: -8px;
   }
-
 }
 
 .marquee span {
@@ -18,7 +17,7 @@
   animation: scroll 5s infinite linear;
   font-weight: bold;
   font-size: 101px;
-  line-height: 0.83;
+  line-height: 1;
   letter-spacing: 0.025em;
   color: rgba(31, 0, 91, 0.08);
 

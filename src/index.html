@@ -5,7 +5,7 @@
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
-        <section class="page__section page__section_1 banner">
+        <section class="page__section banner">
           <div class="container">
             <div class="banner__content">
               <h1 class="banner__title">
@@ -19,7 +19,7 @@
                 <li class="banner__list-item">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
                 <li class="banner__list-item">Розробимо та впровадимо інтерактив для вашого бренду</li>
               </ul>
-              <a class="banner__button">Дізнатись більше</a>
+              <a href="#services" class="banner__button">Дізнатись більше</a>
             </div>
           </div>
           <svg
@@ -757,8 +757,7 @@
             </defs>
           </svg>
         </section>
-        <section class="page__section page__section_2 services">
-          <img src="./img/services-bg.svg" alt=" bg" class="services__bg" />
+        <section class="page__section page__section_2 services" id="services">
           <div class="marquee">
             <span>&nbsp;СЕРВІСИ |</span>
             <span>&nbsp;СЕРВІСИ |</span>
@@ -769,7 +768,7 @@
             <span>&nbsp;СЕРВІСИ |</span>
             <span>&nbsp;СЕРВІСИ |</span>
           </div>
-          <h2 class="services__title">СЕРВІСИ</h2>
+          <h2 class="services__title page__section_1">СЕРВІСИ</h2>
           <div class="container">
             <div class="swiper services-swiper">
               <div class="swiper-wrapper">
@@ -812,7 +811,7 @@
         @@include('html/portfolio.html')
         <!--  -->
         @@include('html/partners.html')
-        <section class="page__section page__section_3 qna">
+        <section class="page__section page__section_4 qna" id="qna">
           <div class="marquee">
             <span>&nbsp;QnA |</span>
             <span>&nbsp;QnA |</span>
