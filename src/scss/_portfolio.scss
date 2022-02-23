@@ -6,7 +6,7 @@
   background-position: center center;
   background-image: url('../img/portfolio-bg.png');
   background-size: 100% 100%;
-  padding-top: 566px;
+  padding-top: 580px;
   margin-bottom: -380px;
   min-height: 2755px;
   z-index: 2;
@@ -94,6 +94,7 @@
 
   .swiper-slide {
     transition: 0.3s all;
+    cursor: pointer;
   }
 
   @include _laptop {

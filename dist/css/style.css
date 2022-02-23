@@ -341,7 +341,7 @@ template {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   background: rgba(255, 255, 255, 0.53);
   box-shadow: inset 0px 4px 43px -2px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(29px);
@@ -357,12 +357,16 @@ template {
 }
 .header__logo img {
   width: 140px;
-  height: 38px;
+}
+@media (max-width: 991px) {
+  .header__logo img {
+    width: 100px;
+  }
 }
 @media (max-width: 767px) {
   .header__logo img {
+    max-width: 80px;
     width: 100%;
-    height: 25px;
   }
 }
 .menu__icon {
@@ -598,6 +602,7 @@ body._touch .menu__link {
   justify-content: flex-start;
   position: relative;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 .banner__list-item:last-child {
   margin-bottom: 0;
@@ -609,7 +614,7 @@ body._touch .menu__link {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  left: -15px;
+  left: 0px;
   top: 16px;
 }
 @media (max-width: 991px) {
@@ -639,7 +644,7 @@ body._touch .menu__link {
   transition: 0.3s all;
 }
 .banner__button:hover {
-  background-color: #3242db;
+  background-color: #1f005b;
   color: #fff;
 }
 @media (max-width: 767px) {
@@ -656,7 +661,7 @@ body._touch .menu__link {
   left: 40%;
   width: 335px;
   height: 300px;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 @media (max-width: 991px) {
   .banner__parallax-planet-bottom {
@@ -676,7 +681,7 @@ body._touch .menu__link {
   position: absolute;
   width: 300px;
   height: 225px;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   top: 10%;
   left: 35%;
 }
@@ -716,7 +721,7 @@ body._touch .menu__link {
 
 .marquee {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 0;
   display: block;
   width: 100%;
@@ -889,7 +894,7 @@ body._touch .menu__link {
   background-position: center center;
   background-image: url("../img/portfolio-bg.png");
   background-size: 100% 100%;
-  padding-top: 566px;
+  padding-top: 580px;
   margin-bottom: -380px;
   min-height: 2755px;
   z-index: 2;
@@ -959,6 +964,7 @@ body._touch .menu__link {
 }
 .portfolio .swiper-slide {
   transition: 0.3s all;
+  cursor: pointer;
 }
 @media (max-width: 1336px) {
   .portfolio {
@@ -1170,7 +1176,7 @@ body._touch .menu__link {
   padding-top: 100px;
   background-image: url("../img/partners-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
 }
 .partner div.partners-button-next {
@@ -1197,9 +1203,10 @@ body._touch .menu__link {
   .partner {
     top: -165px;
     margin-bottom: -180px;
+    background-size: cover;
   }
-  .partner div.swiper-button-next,
-.partner div.swiper-button-prev {
+  .partner div.partners-button-next,
+.partner div.partners-button-prev {
     display: none !important;
   }
 }
@@ -1209,7 +1216,7 @@ body._touch .menu__link {
   }
   .partner div.partners-button-prev,
 .partner div.partners-button-next {
-    display: none;
+    display: none !important;
   }
 }
 .partner__title {
@@ -1457,7 +1464,7 @@ body._touch .menu__link {
   transition: 0.3s all;
 }
 .footer__contact-button:hover {
-  background-color: #3242db;
+  background-color: #1f005b;
   color: #fff !important;
 }
 @media (max-width: 991px) {
@@ -1587,7 +1594,7 @@ body._touch .menu__link {
   left: 80%;
   width: 288px;
   height: 320px;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 @media (max-width: 991px) {
   .footer__parallax-planet-bottom {
@@ -1603,7 +1610,7 @@ body._touch .menu__link {
 }
 .footer__parallax-planet-left {
   position: absolute;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   top: 27%;
   left: 10%;
 }

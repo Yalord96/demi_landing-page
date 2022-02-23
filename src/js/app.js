@@ -58,16 +58,21 @@ const portfolioSwiper = new Swiper('.portfolio-swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1.5,
-      centeredSlides: true
+      centeredSlides: true,
+      spaceBetween: 28
     },
     375: {
-      slidesPerView: 1.5,
+      slidesPerViews: 1.7,
       centeredSlides: true
     },
-    560: {
-      slidesPerView: 2.6,
-      centeredSlides: true
-    },
+    // 375: {
+    //   slidesPerView: 1.5,
+    //   centeredSlides: true
+    // },
+    // 560: {
+    //   slidesPerView: 2.6,
+    //   centeredSlides: true
+    // },
     768: {
       slidesPerView: 3.6,
       centeredSlides: true
@@ -198,31 +203,31 @@ if (iconMenu) {
 
 // Прокрутка при клике
 
-// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-// if (menuLinks.length > 0) {
-//   menuLinks.forEach(menuLink => {
-//     menuLink.addEventListener('click', onMenuLinkClick);
-//   });
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener('click', onMenuLinkClick);
+  });
 
-//   function onMenuLinkClick(e) {
-//     const menuLink = e.target;
-//     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-//       const gotoBlock = document.querySelector(menuLink.dataset.goto);
-//       const gotoBlockValue =
-//         gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
-//       if (iconMenu.classList.contains('_active')) {
-//         document.body.classList.remove('_lock');
-//         iconMenu.classList.remove('_active');
-//         menuBody.classList.remove('_active');
-//       }
-//       window.scrollTo({
-//         top: gotoBlockValue,
-//         behavior: 'smooth'
-//       });
-//       e.preventDefault();
-//     }
-//   }
-// }
+  function onMenuLinkClick(e) {
+    const menuLink = e.target;
+    if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+      const gotoBlock = document.querySelector(menuLink.dataset.goto);
+      const gotoBlockValue =
+        gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+      if (iconMenu.classList.contains('_active')) {
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active');
+        menuBody.classList.remove('_active');
+      }
+      window.scrollTo({
+        top: gotoBlockValue,
+        behavior: 'smooth'
+      });
+      e.preventDefault();
+    }
+  }
+}
 // ========================= paralax =======================
 // let bg = document.querySelector('.mouse-parallax-bg');
 let planetBottom = document.querySelector('.banner__parallax-planet-bottom');

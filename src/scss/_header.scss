@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   background: rgba(255, 255, 255, 0.53);
   box-shadow: inset 0px 4px 43px -2px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(29px);
@@ -22,10 +22,12 @@
   }
   &__logo img {
     width: 140px;
-    height: 38px;
+    @include _tablet {
+      width: 100px;
+    }
     @include _mobile {
+      max-width: 80px;
       width: 100%;
-      height: 25px;
     }
   }
   &__menu {
@@ -44,13 +46,13 @@
   }
   &__list {
     gap: 64px;
-    &:last-child{
+    &:last-child {
       margin-left: 64px;
       gap: 15px;
     }
     @include _laptop {
       gap: 20px;
-      &:last-child{
+      &:last-child {
         margin-left: 32px;
       }
     }
@@ -178,7 +180,7 @@ body._touch .menu__link {
     background-color: red;
     z-index: 2;
   }
-  
+
   .menu__list > li {
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -192,7 +194,7 @@ body._touch .menu__link {
     display: flex;
     align-items: center;
     margin: 20px 0 0 0;
-    li{
+    li {
       margin-bottom: 0;
     }
   }

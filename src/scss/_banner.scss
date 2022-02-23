@@ -63,6 +63,7 @@
     justify-content: flex-start;
     position: relative;
     margin-bottom: 10px;
+    padding-left: 30px;
 
     &:last-child {
       margin-bottom: 0;
@@ -75,7 +76,7 @@
       border-radius: 50%;
       background-color: #fff;
       position: absolute;
-      left: -15px;
+      left: 0px;
       top: 16px;
 
       @include _tablet {
@@ -123,7 +124,7 @@
     left: 40%;
     width: 335px;
     height: 300px;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
 
     @include _tablet {
       display: none;
@@ -142,7 +143,7 @@
     position: absolute;
     width: 300px; //отсоси у ..., додик
     height: 225px;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     top: 10%;
     left: 35%;
 
