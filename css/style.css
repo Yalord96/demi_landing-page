@@ -341,7 +341,7 @@ template {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   background: rgba(255, 255, 255, 0.53);
   box-shadow: inset 0px 4px 43px -2px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(29px);
@@ -602,6 +602,7 @@ body._touch .menu__link {
   justify-content: flex-start;
   position: relative;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 .banner__list-item:last-child {
   margin-bottom: 0;
@@ -613,7 +614,7 @@ body._touch .menu__link {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  left: -15px;
+  left: 0px;
   top: 16px;
 }
 @media (max-width: 991px) {
@@ -963,6 +964,7 @@ body._touch .menu__link {
 }
 .portfolio .swiper-slide {
   transition: 0.3s all;
+  cursor: pointer;
 }
 @media (max-width: 1336px) {
   .portfolio {
