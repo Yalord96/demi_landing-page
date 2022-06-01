@@ -899,6 +899,16 @@ body._touch .menu__link {
   min-height: 2755px;
   z-index: 2;
 }
+@media (max-width: 991px) {
+  .portfolio {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio {
+    margin-top: 80px;
+  }
+}
 .portfolio__notice {
   font-style: italic;
   font-weight: 500;

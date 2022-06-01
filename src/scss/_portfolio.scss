@@ -10,7 +10,12 @@
   margin-bottom: -380px;
   min-height: 2755px;
   z-index: 2;
-
+  @include _tablet {
+    margin-top: 80px;
+  } 
+  @include _mobile {
+    margin-top: 80px;
+  }
   &__notice {
     font-style: italic;
     font-weight: 500;
@@ -112,13 +117,6 @@
       margin-bottom: 80px;
     }
   }
-
-  // @include _tablet {
-  //   &__notice {
-  //     margin-bottom: 80px;
-  //     max-width: 400px;
-  //   }
-  // }
 
   @include _tablet {
     padding-top: 280px;
