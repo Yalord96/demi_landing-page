@@ -192,8 +192,11 @@
     }
   }
   @include _mobile {
+    .swiper {
+      padding: 30px 15px;
+    }
     .swiper-wrapper {
-      left: -10px;
+      padding: 0;
     }
   }
 }
@@ -258,7 +261,8 @@
     }
 
     &__title {
-      font-size: 13px;
+      font-size: 12px;
+      word-break: break-all;
     }
 
     &__links {
