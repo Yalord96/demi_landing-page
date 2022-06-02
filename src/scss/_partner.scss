@@ -80,3 +80,10 @@
   justify-content: center;
   height: 100% !important;
 }
+
+
+@include _mobile {
+  .container-height {
+    height: 200px !important;
+  }
+}
