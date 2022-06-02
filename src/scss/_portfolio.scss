@@ -35,7 +35,7 @@
   }
 
   .marquee {
-    top: 790px;
+    top: 795px;
 
     span {
       color: rgba(255, 255, 255, 0.08);
@@ -43,7 +43,7 @@
 
     &_bottom {
       top: auto;
-      bottom: 815px;
+      bottom: 792px;
     }
   }
 
@@ -107,10 +107,10 @@
     min-height: 2400px;
     padding-top: 500px;
     .marquee {
-      top: 700px;
+      top: 650px;
       &_bottom {
         top: auto;
-        bottom: 700px;
+        bottom: 732px;
       }
     }
     &__notice {
@@ -179,7 +179,7 @@
       top: 360px;
       &_bottom {
         top: auto;
-        bottom: 493px;
+        bottom: 502px;
       }
     }
 
@@ -191,7 +191,22 @@
       margin-bottom: 20px;
     }
   }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .marquee_bottom {
+      top: auto;
+      bottom: 552px;
+    }
+  }
+  @media (min-width: 380px) and (max-width: 500px) {
+    .marquee_bottom {
+      top: auto;
+      bottom: 558px;
+    }
+  }
   @include _mobile {
+    .marquee_top {
+      top: 322px;
+    }
     .swiper {
       padding: 30px 15px;
     }
