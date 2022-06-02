@@ -750,7 +750,7 @@ body._touch .menu__link {
 }
 
 .portfolio .marquee {
-  top: 790px;
+  top: 795px;
 }
 
 .portfolio .marquee span {
@@ -759,7 +759,7 @@ body._touch .menu__link {
 
 .portfolio .marquee_bottom {
   top: auto;
-  bottom: 815px;
+  bottom: 792px;
 }
 
 .portfolio-swiper {
@@ -923,17 +923,11 @@ body._touch .menu__link {
   width: 100%;
 }
 
-.no-webp .partner{
-  background-image: url("../img/partners-bg.png"); }
-
 .partner {
   position: relative;
   top: -200px;
   z-index: 6;
   padding-top: 100px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
 }
 
 .partner div.partners-button-next {
@@ -1456,12 +1450,12 @@ body {
   }
 
   .portfolio .marquee {
-    top: 700px;
+    top: 650px;
   }
 
   .portfolio .marquee_bottom {
     top: auto;
-    bottom: 700px;
+    bottom: 732px;
   }
 
   .portfolio__notice {
@@ -1941,6 +1935,10 @@ body {
     margin-top: 80px;
   }
 
+  .portfolio .marquee_top {
+    top: 322px;
+  }
+
   .portfolio .swiper {
     padding: 30px 15px;
   }
@@ -2096,7 +2094,7 @@ body {
 
   .portfolio .marquee_bottom {
     top: auto;
-    bottom: 493px;
+    bottom: 502px;
   }
 
   .portfolio__notice {
@@ -2108,11 +2106,23 @@ body {
   }
 }
 
+@media (min-width: 500px) and (max-width: 768px) {
+  .portfolio .marquee_bottom {
+    top: auto;
+    bottom: 552px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 500px) {
+  .portfolio .marquee_bottom {
+    top: auto;
+    bottom: 558px;
+  }
+}
+
 .webp .banner{ background-image: url(../img/banner-bg.webp); }
 
 .webp .portfolio{ background-image: url(../img/portfolio-bg.webp); }
-
-.webp .partner{ background-image: url(../img/partners-bg.webp); }
 
 .webp .qna{ background-image: url(../img/qna-bg.webp); }
 
