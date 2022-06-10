@@ -290,3 +290,143 @@ function testWebP(callback) {
     document.querySelector('body').classList.add('no-webp');
     }
   });
+
+
+  //language choosen
+var arrLang = {
+  uk: {
+    servises: 'Сервіси',
+    projects: 'Проекти',
+    partners: 'Партнери',
+    contacts: 'Контакти',
+    banner_title: 'СТУДІЯ ІМЕРСИВНИХ ТЕХНОЛОГІЙ',
+    banner_list_item1: 'Створюємо мобільні додатки з AR',
+    banner_list_item2: 'Нова реальність - для нового майбутнього',
+    banner_list_item3: 'Допоможемо опанувати всесвіт високих технологій та грандіозних мрій',
+    banner_list_item4: 'Розробимо та впровадимо інтерактив для вашого бренду',
+    more: 'Дізнатись більше',
+    servises_marquee: 'СЕРВІСИ |',
+    servises_title: 'СЕРВІСИ',
+    card_title1: 'AR портал',
+    card_title2: 'AR маски',
+    card_title3: 'AR мерч',
+    card_title4: 'AR наліпки',
+    card_title5: 'AR персонажі',
+    card_title6: 'AR візитівки',
+    card_title7: 'AR логотип',
+    card_title8: 'AR бейджи',
+    portfolio_notice: 'Масштабуйте і оновлюйте свої рішення у міру зміни ваших потреб - ми завжди поруч, щоб зробити ваш бізнес ще краще.',
+    projects_content: 'ПРОЕКТИ |',
+    instagram_notice: 'Підписуйся на яскравий та цікавий Instagram Demi',
+    our_partners: 'НАШІ ПАРТНЕРИ',
+    qna_question1: 'Яка вартість проекту?',
+    qna_answer1: "Вартість проекту залежить від кількості годин, які потребуватимуть наші фахівці. Чим більше 3D-об'єктів, анімації та інтерактив, тим більше роботи доведеться виконати.",
+    qna_question2: 'Чим VR відрізняється від AR?',
+    qna_answer2: "VR (Віртуальна реальність) повністю створює тривимірну реальність навколо людини. Для використання потрібні спеціальні окуляри. Доповнена реальність (AR) додає тривимірні об'єкти в реальний світ.",
+    qna_question3: "Чи потрібен вам комп'ютер для використання VR?",
+    qna_answer3: "Деякі VR окуляри підключені до комп'ютера, але на ринку існують гарнітури, які не вимагають підключення до інших пристроїв.",
+    qna_question4: 'Чи можу я розмістити заявку від вашого імені?',
+    qna_answer4: "Так, ми можемо розмістити програму в AppStore і Google Play з нашого облікового запису розробників.",
+    contact_us: 'Залиште заявку на безкоштовну консультацію',
+    ukraine: 'Україна,',
+    adress: 'Дніпро, вул. Наукова, 13'
+  },
+  eng: {
+    servises: 'Servises',
+    projects: 'Projects',
+    partners: 'Partners',
+    contacts: 'Contacts',
+    banner_title: 'Immersive technology studio',
+    banner_list_item1: 'We create mobile applications with AR',
+    banner_list_item2: 'New reality — for a new future',
+    banner_list_item3: 'We will help you master the universe of high technologies and grandiose dreams',
+    banner_list_item4: 'We will develop and implement interactive for your brand',
+    more: 'Learn more',
+    servises_marquee: 'SERVICES |',
+    servises_title: 'SERVICES',
+    card_title1: 'AR portal',
+    card_title2: 'AR masks',
+    card_title3: 'AR merch',
+    card_title4: 'AR stickers',
+    card_title5: 'AR characters',
+    card_title6: 'AR b.cards',
+    card_title7: 'AR logo',
+    card_title8: 'AR badges',
+    portfolio_notice: "Scale and update your solutions as your needs change - we're always there to make your business even better.",
+    projects_marquee: 'PROJECTS |',
+    projects_title: 'PROJECTS',
+    instagram_notice: 'Subscribe at Instagram Demi',
+    our_partners: 'OUR PARTNERS',
+    qna_question1: 'What will my project cost?',
+    qna_answer1: "Each project is different. The cost of the project depends on the number of hours our specialists will need. The more 3D objects, animations, and interactivity, the more work we do on your project.",
+    qna_question2: 'What is the difference between VR and AR?',
+    qna_answer2: "VR (Virtual reality) creates an immersive, three-dimensional reality around a person. Special glasses are required for use. Augmented, or complete reality (AR) adds three-dimensional objects to the real world.",
+    qna_question3: "Do you need a PC to use VR?",
+    qna_answer3: "Some VR glasses are connected to a computer, but there are headsets on the market that do not require connection to other devices.",
+    qna_question4: 'I don’t have a developer account. What should I do?',
+    qna_answer4: "We can upload the app to AppStore and Google Play from our developer account, so you don’t have to!",
+    contact_us: 'Leave your request for free consultation',
+    ukraine: 'Ukraine,',
+    adress: 'Dnipro, Naukova Street, 13'
+  }
+}
+
+document.addEventListener('DOMContentLoaded', getLocalLang)
+  $(function() {
+    $('.translate').click(function() {
+      var lang = $(this).attr('id');
+      saveLocalLang(lang);
+      $('.lang').each(function(index, item) {
+        $(this).text(arrLang[lang][$(this).attr('key')]);
+      });
+    });
+  });
+
+function saveLocalLang(language) {
+  let langs;
+  
+  if (localStorage.getItem('langs') === null) {
+    langs = []
+  } else {
+    langs = JSON.parse(localStorage.getItem('langs'))
+  }
+
+  langs.push(language);
+  localStorage.setItem('langs', JSON.stringify(langs));
+}
+
+function getLocalLang() {
+  let langs;
+
+  if (localStorage.getItem('langs') === null) {
+    langs = []
+  } else {
+    langs = JSON.parse(localStorage.getItem('langs'))
+  }
+
+  let lang = langs[langs.length -1];
+  langs.forEach(function(language) {
+    $('.lang').each(function(index, item) {
+      $(this).text(arrLang[lang][$(this).attr('key')]);
+    });
+  });
+
+  if (lang == 'uk') {
+    document.getElementById('uk').classList.add('uk');
+    document.getElementById('eng').classList.remove('eng')
+  } else if (lang == 'eng') {
+    document.getElementById('eng').classList.add('eng');
+    document.getElementById('uk').classList.remove('uk')
+  }
+
+}
+
+  document.getElementById('uk').onclick = function() {
+    document.getElementById('uk').classList.add('uk');
+    document.getElementById('eng').classList.remove('eng')
+  }
+
+  document.getElementById('eng').onclick = function() {
+    document.getElementById('eng').classList.add('eng');
+    document.getElementById('uk').classList.remove('uk')
+  }

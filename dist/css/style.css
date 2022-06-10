@@ -591,6 +591,28 @@ body._touch .menu__link {
   width: 662px;
 }
 
+.choose-lang {
+  position: absolute;
+  width: 136px;
+  height: 47px;
+  left: 90%;
+  top: 111px;
+}
+
+.translate {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.uk,
+.eng {
+  font-weight: 700;
+}
+
 .marquee {
   position: absolute;
   top: 20px;
@@ -1439,6 +1461,10 @@ body {
     margin-left: 32px;
   }
 
+  .choose-lang {
+    left: 80%;
+  }
+
   .services div.swiper-button-next,
   .services div.swiper-button-prev {
     display: none;
@@ -1908,6 +1934,14 @@ body {
     height: 360px;
     width: 70%;
     top: 55%;
+  }
+
+  .choose-lang {
+    left: 70%;
+  }
+
+  .translate {
+    font-size: 16px;
   }
 
   .marquee {

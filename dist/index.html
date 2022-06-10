@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220602171518" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220610125143" />
   <title>Demi</title>
   <link rel="shortcut icon" href="./img/planetFav.png" type="image/png">
 </head>
@@ -20,11 +20,11 @@
       </div>
       <nav class="menu__body">
         <ul class="menu__list">
-          <li><a data-goto=".page__section_1" class="menu__link">Сервіси</a></li>
-          <li><a data-goto=".page__section_2" class="menu__link">Проекти</a></li>
-          <li><a data-goto=".page__section_3" class="menu__link">Партнери</a></li>
-          <li><a data-goto=".page__section_4" class="menu__link">QnA</a></li>
-          <li><a data-goto=".page__section_5" class="menu__link">Контакти</a></li>
+          <li><a data-goto=".page__section_1" class="menu__link lang" key="servises">Сервіси</a></li>
+          <li><a data-goto=".page__section_2" class="menu__link lang" key="projects">Проекти</a></li>
+          <li><a data-goto=".page__section_3" class="menu__link lang" key="partners">Партнери</a></li>
+          <li><a data-goto=".page__section_4" class="menu__link lang" key="qna">QnA</a></li>
+          <li><a data-goto=".page__section_5" class="menu__link lang" key="contacts">Контакти</a></li>
         </ul>
         <ul class="menu__list">
           <li>
@@ -46,19 +46,24 @@
       <main class="page">
         <section class="page__section banner">
           <div class="container">
+            <div class="choose-lang">
+              <a id="uk" class="translate" href="#" >укр</a>
+              <span>/</span>
+              <a id="eng" class="translate" href="#">eng</a>
+            </div>
             <div class="banner__content">
-              <h1 class="banner__title">
+              <h1 class="banner__title lang" key="banner_title">
                 СТУДІЯ<br />
                 ІМЕРСИВНИХ<br />
                 ТЕХНОЛОГІЙ
               </h1>
               <ul class="banner__list">
-                <li class="banner__list-item">Створюємо мобільні додатки з AR</li>
-                <li class="banner__list-item">Нова реальність - для нового майбутнього</li>
-                <li class="banner__list-item">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
-                <li class="banner__list-item">Розробимо та впровадимо інтерактив для вашого бренду</li>
+                <li class="banner__list-item lang" key="banner_list_item1">Створюємо мобільні додатки з AR</li>
+                <li class="banner__list-item lang" key="banner_list_item2">Нова реальність - для нового майбутнього</li>
+                <li class="banner__list-item lang" key="banner_list_item3">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
+                <li class="banner__list-item lang" key="banner_list_item4">Розробимо та впровадимо інтерактив для вашого бренду</li>
               </ul>
-              <a href="#services" class="banner__button">Дізнатись більше</a>
+              <a href="#services" class="banner__button lang" key="more">Дізнатись більше</a>
             </div>
           </div>
           <svg
@@ -798,57 +803,57 @@
         </section>
         <section class="page__section services" id="services">
           <div class="marquee">
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
           </div>
-          <h2 class="services__title page__section_1">СЕРВІСИ</h2>
+          <h2 class="services__title page__section_1 lang" key="servises_title">СЕРВІСИ</h2>
           <div class="container">
             <div class="swiper services-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-1.png')">
   <picture><source srcset="img/services-card-1.webp" type="image/webp"><img src="img/services-card-1.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR портал</h3>
+  <h3 class="services__card-title lang" key="card_title1">AR портал</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-2.png')">
   <picture><source srcset="img/services-card-2.webp" type="image/webp"><img src="img/services-card-2.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR маски</h3>
+  <h3 class="services__card-title lang" key="card_title2">AR маски</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-3.png')">
   <picture><source srcset="img/services-card-3.webp" type="image/webp"><img src="img/services-card-3.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR мерч</h3>
+  <h3 class="services__card-title lang" key="card_title3">AR мерч</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-4.png')">
   <picture><source srcset="img/services-card-4.webp" type="image/webp"><img src="img/services-card-4.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR наліпки</h3>
+  <h3 class="services__card-title lang" key="card_title4">AR наліпки</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-1.png')">
   <picture><source srcset="img/services-card-5.webp" type="image/webp"><img src="img/services-card-5.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR персонажі</h3>
+  <h3 class="services__card-title lang" key="card_title5">AR персонажі</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-2.png')">
   <picture><source srcset="img/services-card-6.webp" type="image/webp"><img src="img/services-card-6.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR візитівки</h3>
+  <h3 class="services__card-title lang" key="card_title6">AR візитівки</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-3.png')">
   <picture><source srcset="img/services-card-7.webp" type="image/webp"><img src="img/services-card-7.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR логотип</h3>
+  <h3 class="services__card-title lang" key="card_title7">AR логотип</h3>
 </div>
 </div>
                 <div class="swiper-slide"><div class="services__slide" style="background-image: url('img/slide-4.png')">
   <picture><source srcset="img/services-card-8.webp" type="image/webp"><img src="img/services-card-8.jpg" alt="" class="services__image" /></picture>
-  <h3 class="services__card-title">AR бейджи</h3>
+  <h3 class="services__card-title lang" key="card_title8">AR бейджи</h3>
 </div>
 </div>
                 
@@ -881,14 +886,14 @@
         </section>
         <section class="portfolio page__section_2">
   <div class="marquee marquee_top">
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
-    <span>&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
+    <span class="lang" key="projects_marquee">&nbsp;ПРОЕКТИ |</span>
   </div>
   <div class="marquee marquee_bottom">
     <span>&nbsp;INSTAGRAM |</span>
@@ -901,10 +906,10 @@
     <span>&nbsp;INSTAGRAM |</span>
   </div>
   <div class="container container_lg">
-    <h3 class="portfolio__notice" id="projects">
+    <h3 class="portfolio__notice lang" id="projects" key="portfolio_notice">
       Масштабуйте і оновлюйте свої рішення у міру зміни ваших потреб - ми завжди поруч, щоб зробити ваш бізнес ще краще.
     </h3>
-    <h2 class="portfolio__title">ПРОЕКТИ</h2>
+    <h2 class="portfolio__title lang" key="projects_title">ПРОЕКТИ</h2>
     <div class="portfolio-swiper swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -997,7 +1002,7 @@
       <div class="portfolio-instagram__title-logo">
         <img src="./img/instagram-with-text.svg" alt="instagram" />
       </div>
-      <div class="portfolio-instagram__notice">
+      <div class="portfolio-instagram__notice lang" key="instagram_notice">
         Підписуйся на яскравий та цікавий <br />
         <a href="https://www.instagram.com/demistudio.ua/">Instagram Demi</a>
       </div>
@@ -1030,7 +1035,7 @@
         <!--  -->
         <section class="partner page__section_3" id="partners">
   <div class="container">
-    <h2 class="partner__title">НАШІ ПАРТНЕРИ</h2>
+    <h2 class="partner__title lang" key="our_partners">НАШІ ПАРТНЕРИ</h2>
     <div class="swiper partner__swiper">
       <div class="swiper-wrapper container-height">
         <div class="swiper-slide">
@@ -1105,29 +1110,29 @@
           <div class="container">
             <ul class="qna__faq-menu">
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Яка вартість проекту?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question1">Яка вартість проекту?</p>
+                <p class="qna__faq-answer lang" key="qna_answer1">
                   Вартість проекту залежить від кількості годин, які потребуватимуть наші фахівці. Чим більше
                   3D-об'єктів, анімації та інтерактив, тим більше роботи доведеться виконати.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чим VR відрізняється від AR?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question2">Чим VR відрізняється від AR?</p>
+                <p class="qna__faq-answer lang" key="qna_answer2">
                   VR (Віртуальна реальність) повністю створює тривимірну реальність навколо людини. Для використання
                   потрібні спеціальні окуляри.<br />Доповнена реальність (AR) додає тривимірні об'єкти в реальний світ.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чи потрібен вам комп'ютер для використання VR?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question3">Чи потрібен вам комп'ютер для використання VR?</p>
+                <p class="qna__faq-answer lang" key="qna_answer3">
                   Деякі VR окуляри підключені до комп'ютера, але на ринку існують гарнітури, які не вимагають
                   підключення до інших пристроїв.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чи можу я розмістити заявку від вашого імені?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question4">Чи можу я розмістити заявку від вашого імені?</p>
+                <p class="qna__faq-answer lang" key="qna_answer4">
                   Так, ми можемо розмістити програму в AppStore і Google Play з нашого облікового запису розробників.
                 </p>
               </li>
@@ -1138,7 +1143,7 @@
     </div>
     <footer class="footer page__section_5" id="contacts">
   <div class="footer__contact">
-    <p class="footer__contact-text">
+    <p class="footer__contact-text lang" key="contact_us">
       Залиште заявку на<br />
       безкоштовну консультацію
     </p>
@@ -1159,11 +1164,11 @@
     </div>
     <div class="footer__contacts">
       <p class="footer__contacts_address">
-        Україна,<br />
+        <span class="lang" key="ukraine">Україна,</span><br />
         <a
           href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9D%D0%B0%D1%83%D0%BA%D0%BE%D0%B2%D0%B0,+13,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE,+%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+49000/@48.4370156,35.0328016,17z/data=!3m1!4b1!4m5!3m4!1s0x40dbe336264507b1:0x65a8196f74fb32d0!8m2!3d48.4370156!4d35.0349903"
         >
-          Дніпро, вул. Наукова, 13
+          <span class="lang" key="adress">Дніпро, вул. Наукова, 13</span>
         </a>
       </p>
       <p class="footer__contacts_number">
@@ -1921,6 +1926,7 @@
   </button>
 </footer>
 
-    <script src="js/app.min.js?_v=20220602171518"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js?_v=20220610125143"></script>
+    <script src="js/app.min.js?_v=20220610125143"></script>
   </body>
 </html>

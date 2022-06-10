@@ -7,19 +7,24 @@
       <main class="page">
         <section class="page__section banner">
           <div class="container">
+            <div class="choose-lang">
+              <a id="uk" class="translate" href="#" >укр</a>
+              <span>/</span>
+              <a id="eng" class="translate" href="#">eng</a>
+            </div>
             <div class="banner__content">
-              <h1 class="banner__title">
+              <h1 class="banner__title lang" key="banner_title">
                 СТУДІЯ<br />
                 ІМЕРСИВНИХ<br />
                 ТЕХНОЛОГІЙ
               </h1>
               <ul class="banner__list">
-                <li class="banner__list-item">Створюємо мобільні додатки з AR</li>
-                <li class="banner__list-item">Нова реальність - для нового майбутнього</li>
-                <li class="banner__list-item">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
-                <li class="banner__list-item">Розробимо та впровадимо інтерактив для вашого бренду</li>
+                <li class="banner__list-item lang" key="banner_list_item1">Створюємо мобільні додатки з AR</li>
+                <li class="banner__list-item lang" key="banner_list_item2">Нова реальність - для нового майбутнього</li>
+                <li class="banner__list-item lang" key="banner_list_item3">Допоможемо опанувати всесвіт високих технологій та грандіозних мрій</li>
+                <li class="banner__list-item lang" key="banner_list_item4">Розробимо та впровадимо інтерактив для вашого бренду</li>
               </ul>
-              <a href="#services" class="banner__button">Дізнатись більше</a>
+              <a href="#services" class="banner__button lang" key="more">Дізнатись більше</a>
             </div>
           </div>
           <svg
@@ -759,16 +764,16 @@
         </section>
         <section class="page__section services" id="services">
           <div class="marquee">
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
-            <span>&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
+            <span class="lang" key="servises_marquee">&nbsp;СЕРВІСИ |</span>
           </div>
-          <h2 class="services__title page__section_1">СЕРВІСИ</h2>
+          <h2 class="services__title page__section_1 lang" key="servises_title">СЕРВІСИ</h2>
           <div class="container">
             <div class="swiper services-swiper">
               <div class="swiper-wrapper">
@@ -826,29 +831,29 @@
           <div class="container">
             <ul class="qna__faq-menu">
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Яка вартість проекту?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question1">Яка вартість проекту?</p>
+                <p class="qna__faq-answer lang" key="qna_answer1">
                   Вартість проекту залежить від кількості годин, які потребуватимуть наші фахівці. Чим більше
                   3D-об'єктів, анімації та інтерактив, тим більше роботи доведеться виконати.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чим VR відрізняється від AR?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question2">Чим VR відрізняється від AR?</p>
+                <p class="qna__faq-answer lang" key="qna_answer2">
                   VR (Віртуальна реальність) повністю створює тривимірну реальність навколо людини. Для використання
                   потрібні спеціальні окуляри.<br />Доповнена реальність (AR) додає тривимірні об'єкти в реальний світ.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чи потрібен вам комп'ютер для використання VR?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question3">Чи потрібен вам комп'ютер для використання VR?</p>
+                <p class="qna__faq-answer lang" key="qna_answer3">
                   Деякі VR окуляри підключені до комп'ютера, але на ринку існують гарнітури, які не вимагають
                   підключення до інших пристроїв.
                 </p>
               </li>
               <li class="qna__faq-item">
-                <p class="qna__faq-question">Чи можу я розмістити заявку від вашого імені?</p>
-                <p class="qna__faq-answer">
+                <p class="qna__faq-question lang" key="qna_question4">Чи можу я розмістити заявку від вашого імені?</p>
+                <p class="qna__faq-answer lang" key="qna_answer4">
                   Так, ми можемо розмістити програму в AppStore і Google Play з нашого облікового запису розробників.
                 </p>
               </li>
@@ -858,6 +863,7 @@
       </main>
     </div>
     @@include('html/footer.html',{})
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
