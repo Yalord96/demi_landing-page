@@ -327,7 +327,8 @@ var arrLang = {
     qna_answer3: "Деякі VR окуляри підключені до комп'ютера, але на ринку існують гарнітури, які не вимагають підключення до інших пристроїв.",
     qna_question4: 'Чи можу я розмістити заявку від вашого імені?',
     qna_answer4: "Так, ми можемо розмістити програму в AppStore і Google Play з нашого облікового запису розробників.",
-    contact_us: 'Залиште заявку на безкоштовну консультацію',
+    contact_us1: 'Залиште заявку на',
+    contact_us2: 'безкоштовну консультацію',
     ukraine: 'Україна,',
     adress: 'Дніпро, вул. Наукова, 13'
   },
@@ -365,7 +366,8 @@ var arrLang = {
     qna_answer3: "Some VR glasses are connected to a computer, but there are headsets on the market that do not require connection to other devices.",
     qna_question4: 'I don’t have a developer account. What should I do?',
     qna_answer4: "We can upload the app to AppStore and Google Play from our developer account, so you don’t have to!",
-    contact_us: 'Leave your request for free consultation',
+    contact_us1: 'Leave your request for',
+    contact_us2: 'free consultation',
     ukraine: 'Ukraine,',
     adress: 'Dnipro, Naukova Street, 13'
   }
