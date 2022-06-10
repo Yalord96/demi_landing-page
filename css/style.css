@@ -597,6 +597,7 @@ body._touch .menu__link {
   height: 47px;
   left: 90%;
   top: 111px;
+  z-index: 100;
 }
 
 .translate {
@@ -1462,7 +1463,7 @@ body {
   }
 
   .choose-lang {
-    left: 80%;
+    left: 87%;
   }
 
   .services div.swiper-button-next,
@@ -1937,7 +1938,8 @@ body {
   }
 
   .choose-lang {
-    left: 70%;
+    left: 75%;
+    top: 90px;
   }
 
   .translate {
@@ -2111,6 +2113,12 @@ body {
 
   .footer__parallax-girl {
     display: none;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .choose-lang {
+    left: 80%;
   }
 }
 
